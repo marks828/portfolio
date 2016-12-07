@@ -1,3 +1,4 @@
+/* UNIVERSAL */
 *{
   margin: 0;
 }
@@ -11,7 +12,40 @@ nav li{
   list-style: none;
 }
 
-/* home page*/
+/* footer */
+
+footer{
+  background: black;
+  padding:10px 0 20px;
+  text-align: center;
+}
+
+footer .social-media-icons{
+  margin: auto;
+  padding-bottom: 10px;
+  width: 50%;
+  border-bottom: 1px solid grey
+}
+
+footer a{
+  color: white;
+}
+
+.github{
+  margin-right: 30px;
+}
+
+.twitter{
+  margin-left: 30px;
+}
+
+.info p{
+  margin: 0;
+}
+/* UNIVERSAL END */
+
+
+/* HOME PAGE START */
 #first-image{
   width: 100%;
   height: calc(100vh);
@@ -62,34 +96,29 @@ nav li{
 #about-section div p{
   width: 40%
 }
+/* HOME PAGE END */
 
-/* footer */
+/* PORTFOLIO START */
 
-footer{
-  background: black;
-  padding:10px 0 20px;
-  text-align: center;
+.project-photos{
+  width: 350px;
+  height: 200px;
+  margin-bottom: 10px;
+  border-bottom: 
 }
 
-footer .social-media-icons{
-  margin: auto;
-  padding-bottom: 10px;
-  width: 50%;
-  border-bottom: 1px solid grey
+#trivia{
+  background: url("../img/simpsons.png");
+  background-size: cover;
 }
 
-footer a{
-  color: white;
+#boi{
+  background: url("../img/boi.png");
+  background-size: cover;
+}
+#feedme{
+  background: url("../img/feedme.png");
+  background-size: cover;
 }
 
-.github{
-  margin-right: 30px;
-}
-
-.twitter{
-  margin-left: 30px;
-}
-
-.info p{
-  margin: 0;
-}
+/* PORTFOLIO END*/
