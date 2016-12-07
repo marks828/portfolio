@@ -99,12 +99,13 @@ footer a{
 /* HOME PAGE END */
 
 /* PORTFOLIO START */
-
 .project-photos{
   width: 350px;
   height: 200px;
   margin-bottom: 10px;
-  border-bottom: 
+}
+.projects p{
+  border-bottom: 1px solid grey;
 }
 
 #trivia{
