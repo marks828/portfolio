@@ -100,12 +100,21 @@ footer a{
 
 /* PORTFOLIO START */
 .project-photos{
-  width: 350px;
+  min-width: 350px;
   height: 200px;
   margin-bottom: 10px;
 }
-.projects p{
+.projects .project-links{
   border-bottom: 1px solid grey;
+}
+
+.project-descriptions{
+  display: flex;
+}
+
+.project-descriptions p{
+  width: 40%;
+  margin-left: 40px;
 }
 
 #trivia{
