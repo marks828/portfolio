@@ -62,3 +62,34 @@ nav li{
 #about-section div p{
   width: 40%
 }
+
+/* footer */
+
+footer{
+  background: black;
+  padding:10px 0 20px;
+  text-align: center;
+}
+
+footer .social-media-icons{
+  margin: auto;
+  padding-bottom: 10px;
+  width: 50%;
+  border-bottom: 1px solid grey
+}
+
+footer a{
+  color: white;
+}
+
+.github{
+  margin-right: 30px;
+}
+
+.twitter{
+  margin-left: 30px;
+}
+
+.info p{
+  margin: 0;
+}
