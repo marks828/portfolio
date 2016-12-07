@@ -1,0 +1,64 @@
+*{
+  margin: 0;
+}
+
+/* nav */
+nav{
+  display: flex;
+}
+
+nav li{
+  list-style: none;
+}
+
+/* home page*/
+#first-image{
+  width: 100%;
+  height: calc(100vh);
+  background: url('../img/photo.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+
+#first-image:before{
+  content: '';
+  background: rgba(232, 232, 232, 0.5);
+  width: 100%;
+  height: 100%;
+  position:absolute;
+}
+
+#about-me{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-color: lightblue;
+  vertical-align: middle;
+}
+
+/* about section */
+#about-me p{
+  font-size: 30px;
+}
+
+#about-section{
+  background-color: #E8E8E8;
+  padding-top: 20px 0;
+}
+#about-section img{
+  width: 20%;
+  display: inline-block;
+  align-self: center;
+}
+
+#about-section div{
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+#about-section div p{
+  width: 40%
+}
