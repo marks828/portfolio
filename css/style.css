@@ -161,11 +161,31 @@ footer div p{
   background-size: cover;
 }
 
+#anchor-armor{
+  background: url("../img/aa.png");
+  background-size: cover;
+}
+
 /* PORTFOLIO END*/
 
 
 /* CONTACT START */
 .sticky-footer{
   flex-grow: 1;
+}
+
+#contact-container{
+  display: flex;
+  margin: 83px;
+}
+
+#contact-container #contact-info{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+#contact-img{
+  width: 20%;
+  align-self: flex-start;
 }
 /* CONTACT END */
