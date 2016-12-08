@@ -125,6 +125,10 @@ footer div p{
 /* HOME PAGE END */
 
 /* PORTFOLIO START */
+.projects{
+  margin-top:85px;
+}
+
 .project-photos{
   min-width: 350px;
   height: 200px;
