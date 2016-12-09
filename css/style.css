@@ -50,8 +50,10 @@ footer .social-media-icons{
 footer a{
   color: white;
 }
-footer div p{
+footer .info p{
   color: white;
+  font-size: 19px;
+  font-family: georgia, sans-serif;
 }
 
 .github{
@@ -134,7 +136,9 @@ footer div p{
   height: 200px;
   margin-bottom: 10px;
 }
-.projects .project-links{
+/*.projects .project-links{*/
+hr{
+  margin: 0 0 10px 0;
   border-bottom: 1px solid grey;
 }
 
@@ -145,6 +149,19 @@ footer div p{
 .project-descriptions p{
   width: 40%;
   margin-left: 40px;
+}
+
+p.project-links{
+  margin-bottom: 5px;
+}
+
+.projects p, .projects .project-descriptions .project-photos{
+  margin-left: 30px;
+}
+
+.projects .project-descriptions p{
+  font-size: 20px;
+  font-family: georgia, sans-serif;
 }
 
 #trivia{
@@ -188,7 +205,7 @@ footer div p{
 }
 #contact-container #contact-info p{
   font-size: 20px;
-  font-family: helvetica, sans-serif;
+  font-family: georgia, sans-serif;
 
 }
 
@@ -196,5 +213,6 @@ footer div p{
   width: 20%;
   align-self: flex-start;
   margin-right: 75px;
+  border-radius: 10%;
 }
 /* CONTACT END */
