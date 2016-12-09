@@ -176,16 +176,25 @@ footer div p{
 
 #contact-container{
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 83px;
 }
 
 #contact-container #contact-info{
   display: flex;
   flex-direction: column;
-  width: 200px;
+  width: 300px;
 }
+#contact-container #contact-info p{
+  font-size: 20px;
+  font-family: helvetica, sans-serif;
+
+}
+
 #contact-img{
   width: 20%;
   align-self: flex-start;
+  margin-right: 75px;
 }
 /* CONTACT END */
