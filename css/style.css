@@ -76,8 +76,11 @@ footer .info p{
 
 /* HOME PAGE START */
 #first-image{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   width: 100%;
-  height: calc(100vh);
+  height: calc(100vh - 150px);
   background: url('../img/photo.jpg');
   background-attachment: fixed;
   background-size: cover;
@@ -85,7 +88,7 @@ footer .info p{
 }
 
 #first-image:before{
-  content: 'Front-End Developer | Photographer | Musician';
+  content: '';
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,6 +99,13 @@ footer .info p{
   color: grey;
   font-size: 30px;
   font-family: 'Lato', sans-serif;
+}
+
+.home-about{
+  font-size: 40px;
+  margin-bottom:20px;
+  color: black;
+  z-index: 2
 }
 
 #about-me{
@@ -109,6 +119,7 @@ footer .info p{
 /* about section */
 #about-me p{
   font-size: 30px;
+  font-family: georgia, sans-serif;
 }
 
 #about-section{
@@ -128,13 +139,15 @@ footer .info p{
 }
 
 #about-section div p{
-  width: 40%
+  width: 40%;
+  margin-left: -450px;
 }
 /* HOME PAGE END */
 
 /* PORTFOLIO START */
 .projects{
   margin-top:83px;
+  text-align: center;
 }
 
 .project-photos{
@@ -142,7 +155,7 @@ footer .info p{
   height: 200px;
   margin-bottom: 10px;
 }
-/*.projects .project-links{*/
+
 hr{
   margin: 0 0 10px 0;
   border-bottom: 1px solid grey;
@@ -150,6 +163,7 @@ hr{
 
 .project-descriptions{
   display: flex;
+  justify-content: center;
 }
 
 .project-descriptions p{
@@ -166,7 +180,7 @@ p.project-links{
 }
 
 .projects .project-descriptions p{
-  font-size: 20px;
+  font-size: 30px;
   font-family: georgia, sans-serif;
 }
 
@@ -222,3 +236,21 @@ p.project-links{
   border-radius: 10%;
 }
 /* CONTACT END */
+
+
+/* MEDIA QUERIES */
+/* Computer Browser */
+@media only screen and (min-width: 320px)
+and (max-width: 480px){
+  /* NAV */
+  nav{
+    display: block;
+    text-align: center;
+  }
+  nav li{
+    display:block;
+  }
+  #first-image{
+    background-color: white;
+  }
+}
