@@ -47,6 +47,12 @@ footer .info p{
   font: 20px georgia, sans-serif
 }
 
+.section-head{
+  text-align: center;
+  padding: 15px 0;
+  text-decoration: underline;
+}
+
 /************
  home page
 ************/
@@ -70,7 +76,7 @@ footer .info p{
   background-size:cover;
   background-position: center top;
   width: 100%;
-  height:calc(75vh)
+  min-height:calc(75vh)
 }
 
 
@@ -81,9 +87,8 @@ footer .info p{
   padding: 15px 0;
 }
 
-#about-me{
-  font-size: 25px;
-  text-align: center;
+#about-me, #about-section, #contact{
+  background: #919191
 }
 
 .about-p{
@@ -96,10 +101,6 @@ footer .info p{
   display: block;
   margin: 0 auto 15px;
 }
-
-/************
- portfolio
-************/
 
 #contact-info{
   margin:0 20px;
@@ -114,7 +115,7 @@ footer .info p{
  dev section
 ************/
 #skills{
-  background: grey;
+  background: #919191;
   text-align: center;
   padding: 15px 0;
 }
@@ -171,7 +172,7 @@ hr{
   #about-section{
     display: flex;
     align-items: flex-start;
-    margin-left: 20px;
+    padding-left: 20px;
   }
 
   /************
@@ -180,10 +181,11 @@ hr{
   .project-descriptions{
     display: flex;
     align-items: center;
-    margin: 0 15px 10px;
+    margin: 0 20px 10px;
   }
   .project-photos{
     width: 50%;
   }
+
 
 }
