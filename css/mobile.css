@@ -6,6 +6,14 @@ li{
   list-style: none
 }
 
+p{
+  margin: 0;
+}
+
+h2{
+  margin:0;
+}
+
 nav{
   background: black;
   display: flex;
@@ -28,6 +36,7 @@ footer .social-media-icons{
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
+  color: green;
 }
 #footer-hr{
   width: 50%;
@@ -38,16 +47,86 @@ footer .info p{
   font: 20px georgia, sans-serif
 }
 
-/* home page */
-#about-section img{
-  display: inherit;
-  width:50%;
-  margin: 0 auto;
-  border-radius: 50%;
+/************
+ home page
+************/
+
+/************
+ HeaderPhoto
+************/
+#header{
+  position: relative;
 }
-#about-section #p1{
+#header:before{
+  content: '';
+  background: rgba(255, 255, 255, 0.25);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.headerphoto{
+  background: url('../img/photo.jpg');
+  background-size:cover;
+  background-position: center top;
+  width: 100%;
+  height:calc(75vh)
+}
+
+
+/************
+ About
+************/
+#about-section{
+  padding: 15px 0;
+}
+
+#about-me{
+  font-size: 25px;
+  text-align: center;
+}
+
+.about-p{
+  margin: 0 20px;
   font: 20px georgia, sans-serif
 }
+
+.about-pic{
+  width: 25%;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+/************
+ portfolio
+************/
+
+#contact-info{
+  margin:0 20px;
+}
+
+#contact-info p{
+  font: 20px georgia, sans-serif;
+  padding: 10px 0;
+}
+
+/************
+ dev section
+************/
+#skills{
+  background: grey;
+  text-align: center;
+  padding: 15px 0;
+}
+.devimg{
+  width:10%;
+}
+
+.other-skills{
+  font-size: 25px;
+}
+
+
 
 /************
  portfolio
@@ -86,6 +165,18 @@ hr{
 ********************/
 
 @media (min-width: 850px) {
+  /************
+   main page
+  ************/
+  #about-section{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 20px;
+  }
+
+  /************
+   portfolio
+  ************/
   .project-descriptions{
     display: flex;
     align-items: center;
