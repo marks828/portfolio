@@ -1,0 +1,191 @@
+/* universal */
+*{
+  margin: 0
+}
+li{
+  list-style: none
+}
+
+p{
+  margin: 0;
+}
+
+h2{
+  margin:0;
+}
+
+nav{
+  background: black;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 10px 0;
+}
+nav li{
+  color: white;
+  font-size: 30px;
+}
+
+footer{
+  background: black;
+  text-align: center;
+  padding: 20px 0 20px;
+}
+footer .social-media-icons{
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  color: green;
+}
+#footer-hr{
+  width: 50%;
+  margin: 5px auto;
+}
+footer .info p{
+  color: white;
+  font: 20px georgia, sans-serif
+}
+
+.section-head{
+  text-align: center;
+  padding: 15px 0;
+  text-decoration: underline;
+}
+
+/************
+ home page
+************/
+
+/************
+ HeaderPhoto
+************/
+#header{
+  position: relative;
+}
+#header:before{
+  content: '';
+  background: rgba(255, 255, 255, 0.25);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.headerphoto{
+  background: url('../img/photo.jpg');
+  background-size:cover;
+  background-position: center top;
+  width: 100%;
+  min-height:calc(75vh)
+}
+
+
+/************
+ About
+************/
+#about-section{
+  padding: 15px 0;
+}
+
+#about-me, #about-section, #contact{
+  background: #919191
+}
+
+.about-p{
+  margin: 0 20px;
+  font: 20px georgia, sans-serif
+}
+
+.about-pic{
+  width: 25%;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+#contact-info{
+  margin:0 20px;
+}
+
+#contact-info p{
+  font: 20px georgia, sans-serif;
+  padding: 10px 0;
+}
+
+/************
+ dev section
+************/
+#skills{
+  background: #919191;
+  text-align: center;
+  padding: 15px 0;
+}
+.devimg{
+  width:10%;
+}
+
+.other-skills{
+  font-size: 25px;
+}
+
+
+
+/************
+ portfolio
+************/
+.project-photos{
+  width: 75%;
+  margin-bottom: 10px;
+}
+.project-descriptions{
+  text-align: center;
+}
+hr{
+  margin: 0 0 10px 0;
+  border-bottom: 1px solid grey;
+}
+.project-container p.project-links{
+  margin: 0 auto 5px;
+  font-size: 20px;
+  text-align: center;
+}
+.project-container .project-descriptions p{
+  font-size: 20px;
+  font-family: georgia, sans-serif;
+  text-align: center;
+}
+.project-container .project-descriptions .project-photos{
+  margin: 0 auto;
+}
+
+#boi{
+  margin-top: 15px;
+}
+
+/********************
+ portfolio queries
+********************/
+
+@media (min-width: 850px) {
+  /************
+   main page
+  ************/
+  #about-section{
+    display: flex;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+
+  /************
+   portfolio
+  ************/
+  .project-descriptions{
+    display: flex;
+    align-items: center;
+    margin: 0 20px 10px;
+  }
+  .project-photos{
+    width: 50%;
+  }
+
+
+}
