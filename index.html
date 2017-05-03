@@ -21,8 +21,20 @@
   <!-- custom -->
   <link rel="stylesheet" href="css/mobile.css">
 
+  <!--  Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400" rel="stylesheet">
+
 </head>
 <body>
+
+  <header class="nav">
+    <a href="" class="logo">Mark Sweet</a>
+    <ul class="nav-list">
+      <a href="" class="link-item">Projects</a>
+      <a href="" class="link-item">About</a>
+      <a href="" class="link-item">Contact</a>
+    </ul>
+  </header>
 
   <section id='header'>
     <div class="headerphoto"></div>
@@ -45,36 +57,38 @@
     </div>
   </section>
 
+  <h2 class="section-head">Projects</h2>
   <section id="portfolio">
-    <h2 class="section-head">Projects</h2>
-    <div class="project-container">
+    <div class="project-container1">
       <div class="project-descriptions">
         <img src="img/boi.png" id="boi" class="project-photos">
         <p>This is a project I helped build with a UX student at General Assmbly. She created the design and I helped her with all the HTML/CSS.</p>
+        <p class="project-links"><a href="https://marks828.github.io/boi/" target="_blank">View Project</a> | <a href="https://github.com/marks828/boi" target="_blank">Source Code</a></p>
       </div>
-      <p class="project-links"><a href="https://marks828.github.io/boi/" target="_blank">View Project</a> | <a href="https://github.com/marks828/boi" target="_blank">Source Code</a></p>
 
       <hr>
 
       <div class="project-descriptions">
         <img src="img/feedme.png" id="feedme" class="project-photos">
         <p>Have you ever been hungry and didn't know where what you wanted? Feed Me is designed for you. Enter your location (address, city, state, or even country) and we will find restaurants around you!</p>
+        <p class="project-links"><a href="https://marks828.github.io/project3_angular/#/feedme" target="_blank">View Project</a> | <a href="https://github.com/marks828/project3" target="_blank">Source Code</a></p>
       </div>
-      <p class="project-links"><a href="https://marks828.github.io/project3_angular/#/feedme" target="_blank">View Project</a> | <a href="https://github.com/marks828/project3" target="_blank">Source Code</a></p>
+    </div><!-- project container 1-->
       <hr>
 
+    <div class="project-container2">
       <div class="project-descriptions">
         <img src="img/simpsons.png" id="trivia" class="project-photos">
         <p>This is my very first project while attending General Assembly. It's a simple trivia game made from HTML/CSS and jQuery. All the questions are about The Simpsons, and most from one episode.</p>
+        <p class="project-links"><a href="https://marks828.github.io/project1/" target="_blank">View Project</a> | <a href="https://github.com/marks828/project1" target="_blank">Source Code</a></p>
       </div>
-      <p class="project-links"><a href="https://marks828.github.io/project1/" target="_blank">View Project</a> | <a href="https://github.com/marks828/project1" target="_blank">Source Code</a></p>
       <hr>
 
       <div class="project-descriptions">
         <img src="img/aa.png" id="anchor-armor" class="project-photos">
         <p>My friend's band was releasing an EP and wanted to record a simple video. At the time I was working with video and video editing with a friend so we decided we could help out. We recorded all the audio and got an extra person to help us shoot.</p>
+        <p class="project-links"><a href="https://vimeo.com/118619200" target="_blank">View Project</a></p>
       </div>
-      <p class="project-links"><a href="https://vimeo.com/118619200" target="_blank">View Project</a></p>
     </div>
   </section>
 
@@ -115,7 +129,7 @@
 
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
