@@ -14,11 +14,33 @@ h2{
   margin:0;
 }
 
+/************
+ home page
+************/
+
+/************
+    NAV
+************/
 .nav{
   display: flex;
   flex-direction: column;
-  padding: 0 5%;
+  padding: 10px 5%;
   text-align: center;
+  background:#d4d6d8;
+}
+
+.nav .logo{
+  text-align: center;
+}
+
+.logo a, .link-item{
+  color:black;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+}
+
+.nav .nav-list .link-item{
+  font-size: 24px;
 }
 
 .nav-list{
@@ -26,18 +48,6 @@ h2{
   flex-direction: column;
   padding: 0;
 }
-
-
-
-.section-head{
-  text-align: center;
-  padding: 15px 0;
-  text-decoration: underline;
-}
-
-/************
- home page
-************/
 
 /************
  HeaderPhoto
@@ -61,47 +71,11 @@ h2{
   min-height:calc(75vh)
 }
 
-
-/************
- About
-************/
-#about-section{
-  padding: 15px 0;
-}
-
-#about-me, #about-section, #contact{
-  background: #919191
-}
-
-.about-p{
-  margin: 0 20px;
-  font-size: 20px;
-  font-weight: lighter;
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
-.about-pic{
-  width: 25%;
-  display: block;
-  margin: 0 auto 15px;
-}
-
-#contact-info{
-  margin:0 20px;
-}
-
-#contact-info p{
-  font-family:'Source Sans Pro', sans-serif;
-  font-size: 20px;
-  font-weight: lighter;
-  padding: 10px 0;
-}
-
 /************
  dev section
 ************/
 #skills{
-  background: #919191;
+  background: #d4d6d8;
   text-align: center;
   padding: 15px 0;
 }
@@ -113,11 +87,21 @@ h2{
   font-size: 25px;
 }
 
-
-
 /************
  portfolio
 ************/
+.section-head{
+  text-align: center;
+  padding: 15px 0;
+  text-decoration: underline;
+  background: #white;
+}
+
+#portfolio{
+  padding-bottom: 50px;
+  background: white;
+}
+
 .project-container1, .project-container2{
   display: flex;
   justify-content: space-around;
@@ -134,28 +118,77 @@ h2{
   text-align: center;
   margin-bottom: 15px;
   box-shadow: 5px 5px 10px #888;
-}
-hr{
-  visibility: hidden;
-  margin: 0 0 10px 0;
-  border-bottom: 1px solid grey;
+  background: #d4d6d8;
 }
 .project-container p.project-links{
   margin: 0 auto 5px;
-  font-size: 20px;
+  font-size: 200px;
   text-align: center;
 }
-.project-container .project-descriptions p{
+
+.project-p{
+  display: none;
+}
+
+/*
+.project-container .project-descriptions p.project-p{
   font-size: 14px;
   font-family: georgia, sans-serif;
   text-align: center;
-}
+}*/
 .project-container .project-descriptions .project-photos{
   margin: 0 auto;
 }
 
-#boi{
-  margin-top: 15px;
+/************
+   Photos
+************/
+#photo-bg{
+  width: 100%;
+  height: 200px;
+  background-image: url("../img/wedding.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+#photos{
+  margin: 20px 0;
+}
+
+#photos .photo-description p{
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#photos .photo-description p
+
+
+/************
+ About
+************/
+#about-section{
+  padding: 15px 0;
+}
+
+#about-me, #about-section, #contact{
+  background: #d4d6d8;
+}
+
+.about-p{
+  margin: 0 20px;
+  font-size: 20px;
+  font-weight: lighter;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.about-pic{
+  width: 25%;
+  display: block;
+  margin: 0 auto 15px;
+  box-shadow: 10px 10px 10px #888;
 }
 
 /********************
@@ -163,7 +196,7 @@ hr{
 ********************/
 
 footer{
-  background: black;
+  background: #d4d6d8;
   text-align: center;
   padding: 20px 0 20px;
 }
@@ -172,14 +205,18 @@ footer .social-media-icons{
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
-  color: green;
+  color: black;
+}
+.fa:before{
+  color: black;
 }
 #footer-hr{
   width: 50%;
-  margin: 5px auto;
+  margin: 10px auto;
+  border: 1px solid black;
 }
 footer .info p{
-  color: white;
+  color:black;
   font: 20px georgia, sans-serif
 }
 
@@ -242,5 +279,15 @@ footer .info p{
     display: inline-block;
   }
 
+  .project-p{
+    display: inherit;
+  }
+
+  /************
+   Phtoos
+  ************/
+  #photo-bg{
+    height: 400px;
+  }
 
 }
