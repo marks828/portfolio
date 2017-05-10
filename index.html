@@ -28,33 +28,48 @@
 <body>
 
   <nav class="nav">
-    <h2 class="logo"><a href="" >Mark Sweet</a></h2>
+    <h2 class="logo">Mark Sweet</h2>
     <ul class="nav-list">
+      <a href="#about-me" class="link-item">About</a>
       <a href="#skills" class="link-item">Projects</a>
       <a href="#photo-bg" class="link-item">Photos</a>
-      <a href="#about-section" class="link-item">About</a>
       <a href="#footer" class="link-item">Contact</a>
     </ul>
   </nav>
 
-  <section id='header'>
-    <div class="headerphoto"></div>
-  </section>
+  <div id='about-me'>
+    <h2 class="section-head">About Me</h2>
+  </div>
 
+  <div id='about-section'>
+      <img src="img/chest-hs.jpg" alt="chest head shot" class="about-pic">
+      <p class="about-p" id="p1">
+      I am a web developer and UX designer with a love for art and creation. I graduated from General Assembly’s Web Development Immersive program where I learned how to create full-stack web applications from the ground up. With the help of my instructors, I learned and grew in confidence in my ability to create clean responsive websites.
+      <br><br>
+      When I’m not creating websites, you can find me playing hockey, guitar, or catching up with friends over a few games of League of Legends.
+      </p>
+  </div>
+
+  <h2 class="section-head primary-head">Primary Languages</h2>
   <section id="skills">
-    <h2 class="section-head">Primary Languages</h2>
-    <img src="img/devimg/html.png" alt="" class='devimg'>
-    <img src="img/devimg/css.png" alt="" class='devimg'>
-    <img src="img/devimg/js.png" alt="" class='devimg'>
-    <img src="img/devimg/jq.png" alt="" class='devimg'>
-    <img src="img/devimg/ang.png" alt="" class='devimg'>
-    <img src="img/devimg/react.png" alt="" class='devimg'>
-    <img src="img/devimg/rb.png" alt="" class='devimg'>
-    <img src="img/devimg/rails.png" alt="" class='devimg'>
-    <img src="img/devimg/py.png" alt="" class='devimg'>
-    <div>
-      <h2>Other Skills</h2>
-      <p class="other-skills">MongoDB | SQL | Express js | Node js | Django | Bootstrap | SASS | Photoshop | Lightroom | Adobe Premier | Adobe CC </p>
+    <div class="skillphoto">
+      <p class="primary-skills">HTML | CSS | JavaScript | jQuery | Angular | React | Ruby | Rails | Python</p>
+      <img src="img/devimg/html.png" alt="" class='devimg'>
+      <img src="img/devimg/css.png" alt="" class='devimg'>
+      <img src="img/devimg/js.png" alt="" class='devimg'>
+      <img src="img/devimg/jq.png" alt="" class='devimg'>
+      <img src="img/devimg/ang.png" alt="" class='devimg'>
+    <!-- </div>
+      <br>
+    <div class="skillphoto"> -->
+      <img src="img/devimg/react.png" alt="" class='devimg'>
+      <img src="img/devimg/rb.png" alt="" class='devimg'>
+      <img src="img/devimg/rails.png" alt="" class='devimg'>
+      <img src="img/devimg/py.png" alt="" class='devimg'>
+    </div>
+    <div class="other-skills">
+      <h2 class="section-head">Other Skills</h2>
+      <p class="other-skills">MongoDB | SQL | Express js | Node js | Django | Bootstrap | SASS | Photoshop | Lightroom | Adobe Premiere | Adobe CC </p>
     </div>
   </section>
 
@@ -79,7 +94,7 @@
     <div class="project-container2">
       <div class="project-descriptions">
         <img src="img/simpsons.png" id="trivia" class="project-photos">
-        <p class="project-name">Simpsons</p>
+        <p class="project-name">Simpsons Trivia</p>
         <p class="project-p">This is my very first project while attending General Assembly. It's a simple trivia game made from HTML/CSS and jQuery. All the questions are about The Simpsons, and most from one episode.</p>
         <p class="project-links"><a href="https://marks828.github.io/project1/" target="_blank">View Project</a> | <a href="https://github.com/marks828/project1" target="_blank">Source Code</a></p>
       </div>
@@ -99,26 +114,18 @@
     <div class="photo-description">
       <p>After graduating college I spent some time studying and practicing photography. I worked primarily as an event photographer. For 4 years, I worked with <a href="http://www.umdfauxpaz.com/">Faux Paz</a> (A University of Maryland a capplla group) and loved every event I shot. You can find a collection of my work at the links below.
         <br><br>
-        <a href="http://msweetportfolio.blogspot.com/2014/06/blog-post.html" target="_blank">Photo Gallery</a> | <a href="http://msweetportfolio.blogspot.com/2013/05/faux-paz.html" target="_blank">Faux Paz Photos</a>
+        <a href="http://msweetportfolio.blogspot.com/2014/06/blog-post.html" target="_blank" class="photo-links">Photo Gallery</a> | <a href="http://msweetportfolio.blogspot.com/2013/05/faux-paz.html" target="_blank" class="photo-links">Faux Paz Photos</a>
       </p>
     </div>
   </section>
 
-  <div id='about-me'>
-    <h2 class="section-head">About Me</h2>
-  </div>
-
-  <div id='about-section'>
-      <img src="img/chest-hs.jpg" alt="chest head shot" class="about-pic">
-      <p class="about-p" id="p1">
-      I am a web developer and UX designer with a love for art and creation. I graduated from General Assembly’s Web Development Immersive program where I learned how to create full-stack web applications from the ground up. With the help of my instructors, I learned and grew in confidence in my ability to create clean responsive websites.
-      <br><br>
-      When I’m not creating websites, you can find me playing hockey, guitar, or catching up with friends over a few games of League of Legends.
-      <br><br>
+  <div class="contact">
+    <h2 class="section-head">Contact</h2>
+    <p>
       Email: marks828@gmail.com
       <br>LinkedIn: <a href="https://www.linkedin.com/in/mark-s-sweet" target="_blank">Mark Sweet</a> : <a href="img/mark_sweet_resume.pdf" target="_blank">Resume</a>
       <br>Twitter: <a href="https://twitter.com/SNESChalmers34" target="_blank">@SNESChalmers34</a>
-      </p>
+    </p>
   </div>
 
   <footer id="footer">
@@ -130,7 +137,6 @@
     <hr id="footer-hr">
     <div class="info" >
       <p>Mark Sweet</p>
-      <p>Marks828@gmail.com</p>
     </div>
   </footer>
 

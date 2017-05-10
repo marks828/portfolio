@@ -14,9 +14,13 @@ h2{
   margin:0;
 }
 
-.nav, #skills, .project-descriptions, #about-me,
-#about-section, #contact, footer{
+#skills, .project-descriptions,
+#contact, footer{
   background: #d4d6d8;
+}
+
+#about-me, #about-section, #portfolio{
+  background: white
 }
 
 /************
@@ -31,14 +35,16 @@ h2{
   flex-direction: column;
   padding: 10px 5%;
   text-align: center;
+  background:#262728;
 }
 
 .nav .logo{
   text-align: center;
 }
 
-.logo a, .link-item{
-  color:black;
+
+.logo, .link-item{
+  color:white;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
 }
@@ -53,40 +59,32 @@ h2{
   padding: 0;
 }
 
-/************
- HeaderPhoto
-************/
-#header{
-  position: relative;
-}
-#header:before{
-  content: '';
-  background: rgba(255, 255, 255, 0.25);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
-
-.headerphoto{
-  background: url('../img/photo.jpg');
-  background-size:cover;
-  background-position: center top;
-  width: 100%;
-  min-height:calc(75vh)
+.link-item:hover{
+  color:#fff884
 }
 
 /************
  dev section
 ************/
 #skills{
+  padding-bottom: 20px;
+}
+.primary-head{
+  background: #d4d6d8;
+}
+.skillphoto{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   text-align: center;
   padding: 15px 0;
 }
 .devimg{
-  width:10%;
+  display: none;
 }
 
-.other-skills{
+.other-skills, .primary-skills{
+  text-align: center;
   font-size: 25px;
 }
 
@@ -97,12 +95,18 @@ h2{
   text-align: center;
   padding: 15px 0;
   text-decoration: underline;
-  background: #white;
 }
 
 #portfolio{
   padding-bottom: 50px;
-  background: white;
+}
+
+.project-container1{
+  margin-bottom: 30px;
+}
+
+.project-container2{
+  margin-top:30px;
 }
 
 .project-container1, .project-container2{
@@ -121,6 +125,7 @@ h2{
   text-align: center;
   margin-bottom: 15px;
   box-shadow: 5px 5px 10px #888;
+  border: 10px solid #d4d6d8;
 }
 .project-container p.project-links{
   margin: 0 auto 5px;
@@ -131,6 +136,23 @@ h2{
 .project-p{
   display: none;
 }
+
+.project-p, .project-name{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.project-name{
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.project-links a{
+  font-size: 18px;
+  display: block;
+}
+
 
 /************
    Photos
@@ -144,19 +166,24 @@ h2{
   background-attachment: fixed;
 }
 
-
 #photos{
   margin: 20px 0;
 }
 
+.photo-description{
+  width: 90%;
+  margin:auto;
+}
+
 #photos .photo-description p{
   text-align: center;
-  font-size: 20px;
+  font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-#photos .photo-description p
-
+.photo-links{
+  font-size: 28px;
+}
 
 /************
  About
@@ -173,11 +200,24 @@ h2{
 }
 
 .about-pic{
-  width: 25%;
+  width: 15%;
   display: block;
   margin: 0 auto 15px;
   box-shadow: 10px 10px 10px #888;
 }
+/********************
+     Contact
+********************/
+.contact{
+  background: #d4d6d8;
+  text-align: center;
+}
+
+.contact p{
+  font-size: 24px;
+}
+
+
 
 /********************
      FOOTER
@@ -247,16 +287,28 @@ footer .info p{
   }
 
   /************
+   skills
+  ************/
+  .devimg{
+    display: inherit;
+    width: 6%;
+  }
+
+  .primary-skills{
+    display: none;
+  }
+
+  /************
    portfolio
   ************/
   #portfolio{
-    display: flex;
+    /*display: flex;*/
   }
 
   .project-descriptions{
     display: flex;
     align-items: center;
-    width:45%;
+    width:35%;
     margin: 0 20px 10px;
   }
   .project-photos{
@@ -267,7 +319,12 @@ footer .info p{
   }
 
   .project-p{
+    font-size: 20px;
     display: inherit;
+  }
+
+  .project-links a{
+    display: inline-block;
   }
 
   /************
