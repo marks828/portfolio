@@ -101,15 +101,9 @@ h2{
   padding-bottom: 50px;
 }
 
-.project-container1{
+.project-container{
   margin-bottom: 30px;
-}
-
-.project-container2{
   margin-top:30px;
-}
-
-.project-container1, .project-container2{
   display: flex;
   justify-content: space-around;
 }
@@ -118,6 +112,7 @@ h2{
   width: 100%;
   margin-bottom: 10px;
 }
+
 .project-descriptions{
   width: 30%;
   display: flex;
@@ -126,11 +121,6 @@ h2{
   margin-bottom: 15px;
   box-shadow: 5px 5px 10px #888;
   border: 10px solid #d4d6d8;
-}
-.project-container p.project-links{
-  margin: 0 auto 5px;
-  font-size: 200px;
-  text-align: center;
 }
 
 .project-p{
@@ -313,9 +303,6 @@ footer .info p{
   }
   .project-photos{
     width: 100%;
-  }
-  .project-container{
-    display: inline-block;
   }
 
   .project-p{
